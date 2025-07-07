@@ -85,6 +85,29 @@ h2 {
   color: #666;
   margin-right: 0.5rem;
 }
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-list li {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #ddd;
+}
+
+.education-list .institution {
+  color: #666;
+  font-style: italic;
+}
+
+.education-list .details {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
 footer {
   background: #f8f8f8;
   color: #666;
