@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Inter', Arial, sans-serif;
   background: #fff;
-  color: #333;
+  color: #1e293b;
 }
 
 .container {
@@ -12,19 +12,39 @@ body {
   padding: 2rem 1rem;
 }
 
+header .container {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+header .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header {
-  background: #f8f8f8;
-  padding: 2rem 0;
-  border-bottom: 1px solid #e0e0e0;
+  background: #f8fafc;
+  padding: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  border-radius: 16px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 600px;
+  min-height: 250px;
 }
 .profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ddd;
+  border: 3px solid #1e3a8a;
   margin-right: 2rem;
-  float: left;
+  flex-shrink: 0;
 }
 h1 {
   margin: 0 0 0.5rem 0;
@@ -32,25 +52,32 @@ h1 {
   font-weight: 700;
   letter-spacing: 1px;
   padding-top: 0.5rem;
+  color: #1e3a8a;
 }
 .role {
-  color: #666;
+  color: #64748b;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
 .tagline {
-  color: #888;
+  color: #64748b;
   font-size: 1rem;
   margin-bottom: 0;
   line-height: 1.4;
 }
 section {
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  width: 600px;
 }
 h2 {
   font-size: 1.3rem;
-  color: #333;
-  border-left: 3px solid #ccc;
+  color: #1e3a8a;
+  border-left: 3px solid #1e3a8a;
   padding-left: 0.7rem;
   margin-bottom: 1.2rem;
   font-weight: 700;
@@ -63,16 +90,16 @@ h2 {
 .timeline li {
   margin-bottom: 1.2rem;
   padding-left: 0.5rem;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid #e2e8f0;
   position: relative;
 }
 .timeline .year {
   font-weight: 700;
-  color: #666;
+  color: #64748b;
   margin-right: 0.7rem;
 }
 .timeline .desc {
-  color: #555;
+  color: #475569;
 }
 .contact-list {
   list-style: none;
@@ -84,8 +111,16 @@ h2 {
   font-size: 1.1rem;
 }
 .contact-list i {
-  color: #666;
+  color: #3b82f6;
   margin-right: 0.5rem;
+}
+.contact-list a {
+  color: #1e293b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-list a:hover {
+  color: #f97316;
 }
 
 .education-list {
@@ -97,34 +132,38 @@ h2 {
 .education-list li {
   margin-bottom: 1.5rem;
   padding-left: 0.5rem;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid #e2e8f0;
 }
 
 .education-list .institution {
-  color: #666;
+  color: #64748b;
   font-style: italic;
 }
 
 .education-list .details {
-  color: #555;
+  color: #475569;
   font-size: 0.9rem;
   margin-top: 0.3rem;
 }
 footer {
-  background: #f8f8f8;
-  color: #666;
+  background: #f8fafc;
+  color: #64748b;
   text-align: center;
-  padding: 1.5rem 0 1rem 0;
-  border-top: 1px solid #e0e0e0;
+  padding: 1.5rem 2rem 1rem 2rem;
+  border-top: 1px solid #e2e8f0;
+  border-radius: 16px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 600px;
 }
 footer .social a {
-  color: #666;
+  color: #64748b;
   margin: 0 0.5rem;
   font-size: 1.3rem;
   transition: color 0.2s;
 }
 footer .social a:hover {
-  color: #333;
+  color: #f97316;
 }
 @media (max-width: 600px) {
   .container {
